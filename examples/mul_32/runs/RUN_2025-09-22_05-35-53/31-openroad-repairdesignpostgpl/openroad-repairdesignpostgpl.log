@@ -1,0 +1,112 @@
+Reading timing models for corner nom_tt_025C_1v80…
+Reading timing library for the 'nom_tt_025C_1v80' corner at '/foss/pdks/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib'…
+Reading timing models for corner nom_ff_n40C_1v95…
+Reading timing library for the 'nom_ff_n40C_1v95' corner at '/foss/pdks/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ff_n40C_1v95.lib'…
+Reading timing models for corner nom_ss_100C_1v60…
+Reading timing library for the 'nom_ss_100C_1v60' corner at '/foss/pdks/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ss_100C_1v60.lib'…
+Reading OpenROAD database at '/home/asic/workspace/mul_32/runs/RUN_2025-09-22_05-35-53/27-openroad-globalplacement/mul_32.odb'…
+Reading design constraints file at '/usr/local/lib/python3.12/dist-packages/openlane/scripts/base.sdc'…
+[INFO] Using clock clk…
+[INFO] Setting output delay to: 200
+[INFO] Setting input delay to: 200
+[INFO] Setting load to: 0.033442
+[INFO] Setting clock uncertainty to: 0.25
+[INFO] Setting clock transition to: 0.1499999999999999944488848768742172978818416595458984375
+[INFO] Setting timing derate to: 5%
+[INFO] Setting RC values…
+[INFO RSZ-0027] Inserted 64 input buffers.
+[INFO RSZ-0028] Inserted 64 output buffers.
+[INFO RSZ-0058] Using max wire length 6335um.
+Iteration | Resized | Buffers | Nets repaired | Remaining
+---------------------------------------------------------
+        0 |       0 |       0 |             0 |      5564
+      100 |      97 |       0 |             0 |      5464
+      200 |     187 |       0 |             0 |      5364
+      300 |     278 |       0 |             0 |      5264
+      400 |     367 |       0 |             0 |      5164
+      500 |     455 |       0 |             0 |      5064
+      600 |     540 |       0 |             0 |      4964
+      700 |     622 |       1 |             1 |      4864
+      800 |     709 |       2 |             2 |      4764
+      900 |     792 |       4 |             4 |      4664
+     1000 |     871 |       6 |             6 |      4564
+     1100 |     954 |       9 |             9 |      4464
+     1200 |    1047 |      13 |            13 |      4364
+     1300 |    1134 |      17 |            16 |      4264
+     1400 |    1218 |      17 |            16 |      4164
+     1500 |    1306 |      17 |            17 |      4064
+     1600 |    1392 |      17 |            17 |      3964
+     1700 |    1473 |      23 |            23 |      3864
+     1800 |    1563 |      24 |            25 |      3764
+     1900 |    1650 |      25 |            26 |      3664
+     2000 |    1727 |      25 |            26 |      3564
+     2100 |    1810 |      25 |            27 |      3464
+     2200 |    1890 |      29 |            31 |      3364
+     2300 |    1967 |      30 |            32 |      3264
+     2400 |    2048 |      30 |            33 |      3164
+     2500 |    2136 |      30 |            36 |      3064
+     2600 |    2224 |      30 |            42 |      2964
+     2700 |    2312 |      30 |            44 |      2864
+     2800 |    2403 |      30 |            45 |      2764
+     2900 |    2492 |      30 |            45 |      2664
+     3000 |    2585 |      30 |            45 |      2564
+     3100 |    2684 |      30 |            45 |      2464
+     3200 |    2781 |      30 |            45 |      2364
+     3300 |    2880 |      30 |            45 |      2264
+     3400 |    2970 |      30 |            45 |      2164
+     3500 |    3063 |      30 |            45 |      2064
+     3600 |    3158 |      30 |            45 |      1964
+     3700 |    3256 |      30 |            45 |      1864
+     3800 |    3355 |      30 |            46 |      1764
+     3900 |    3446 |      30 |            56 |      1664
+     4000 |    3537 |      30 |            71 |      1564
+     4100 |    3632 |      30 |            82 |      1464
+     4200 |    3731 |      30 |            93 |      1364
+     4300 |    3830 |      30 |            94 |      1264
+     4400 |    3930 |      30 |            95 |      1164
+     4500 |    4030 |      30 |            99 |      1064
+     4600 |    4125 |      30 |           157 |       964
+     4700 |    4217 |      30 |           202 |       864
+     4800 |    4312 |      30 |           242 |       764
+     4900 |    4401 |      30 |           289 |       664
+     5000 |    4496 |      30 |           336 |       564
+     5100 |    4593 |      30 |           389 |       464
+     5200 |    4685 |      30 |           436 |       364
+     5300 |    4780 |      30 |           493 |       264
+     5400 |    4873 |      30 |           549 |       164
+     5500 |    5409 |     504 |           631 |        64
+    final |    5409 |     504 |           631 |         0
+---------------------------------------------------------
+[INFO RSZ-0034] Found 567 slew violations.
+[INFO RSZ-0035] Found 64 fanout violations.
+[INFO RSZ-0038] Inserted 504 buffers in 631 nets.
+[INFO RSZ-0039] Resized 5409 instances.
+Placement Analysis
+---------------------------------
+total displacement      13370.5 u
+average displacement        1.7 u
+max displacement           10.1 u
+original HPWL          131573.0 u
+legalized HPWL         144980.1 u
+delta HPWL                   10 %
+
+[INFO DPL-0020] Mirrored 2516 instances
+[INFO DPL-0021] HPWL before          144980.1 u
+[INFO DPL-0022] HPWL after           141225.1 u
+[INFO DPL-0023] HPWL delta               -2.6 %
+[INFO] Setting RC values…
+Setting global connections for newly added cells…
+[INFO] Setting global connections...
+Updating metrics…
+Cell type report:                       Count       Area
+  Fill cell                               240     900.86
+  Tap cell                               1525    1908.08
+  Timing Repair Buffer                    632    3563.42
+  Inverter                                 69     259.00
+  Multi-Input combinational cell         5302   39953.32
+  Total                                  7768   46584.68
+Writing OpenROAD database to '/home/asic/workspace/mul_32/runs/RUN_2025-09-22_05-35-53/31-openroad-repairdesignpostgpl/mul_32.odb'…
+Writing netlist to '/home/asic/workspace/mul_32/runs/RUN_2025-09-22_05-35-53/31-openroad-repairdesignpostgpl/mul_32.nl.v'…
+Writing powered netlist to '/home/asic/workspace/mul_32/runs/RUN_2025-09-22_05-35-53/31-openroad-repairdesignpostgpl/mul_32.pnl.v'…
+Writing layout to '/home/asic/workspace/mul_32/runs/RUN_2025-09-22_05-35-53/31-openroad-repairdesignpostgpl/mul_32.def'…
+Writing timing constraints to '/home/asic/workspace/mul_32/runs/RUN_2025-09-22_05-35-53/31-openroad-repairdesignpostgpl/mul_32.sdc'…

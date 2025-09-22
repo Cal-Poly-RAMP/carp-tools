@@ -1,0 +1,5 @@
+
+15. Executing PROC_DLATCH pass (convert process syncs to latches).
+No latch inferred for signal `\cmp_32.\GT' from process `\cmp_32.$proc$rtl/cmp_32.sv:0$1'.
+No latch inferred for signal `\cmp_32.\LT' from process `\cmp_32.$proc$rtl/cmp_32.sv:0$1'.
+No latch inferred for signal `\cmp_32.\EQ' from process `\cmp_32.$proc$rtl/cmp_32.sv:0$1'.

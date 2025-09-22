@@ -1,0 +1,31 @@
+{
+    "nl": "/home/asic/workspace/mul_32/runs/RUN_2025-09-22_05-35-53/06-yosys-synthesis/mul_32.nl.v",
+    "pnl": null,
+    "pnl-sdf-friendly": null,
+    "pnl-npc": null,
+    "def": null,
+    "lef": null,
+    "openroad-lef": null,
+    "odb": null,
+    "sdc": null,
+    "sdf": null,
+    "spef": null,
+    "lib": null,
+    "spice": null,
+    "mag": null,
+    "gds": null,
+    "mag_gds": null,
+    "klayout_gds": null,
+    "json_h": "/home/asic/workspace/mul_32/runs/RUN_2025-09-22_05-35-53/05-yosys-jsonheader/mul_32.h.json",
+    "vh": null,
+    "metrics": {
+        "design__lint_error__count": 0,
+        "design__lint_timing_construct__count": 0,
+        "design__lint_warning__count": 442,
+        "design__inferred_latch__count": 0,
+        "design__instance__count": 5371,
+        "design__instance__area": 53510.0704,
+        "design__instance_unmapped__count": 0,
+        "synthesis__check_error__count": 0
+    }
+}

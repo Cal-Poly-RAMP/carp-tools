@@ -1,0 +1,41 @@
+Reading technology LEF file at '/foss/pdks/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef'…
+[INFO ODB-0227] LEF file: /foss/pdks/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/techlef/sky130_fd_sc_hd__nom.tlef, created 14 layers, 25 vias
+Reading cell LEF file at '/foss/pdks/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef'…
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /foss/pdks/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef at line 2.
+
+[INFO ODB-0227] LEF file: /foss/pdks/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_fd_sc_hd.lef, created 437 library cells
+Reading cell LEF file at '/foss/pdks/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd.lef'…
+[WARNING ODB-0220] WARNING (LEFPARS-2008): NOWIREEXTENSIONATPIN statement is obsolete in version 5.6 or later.
+The NOWIREEXTENSIONATPIN statement will be ignored. See file /foss/pdks/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd.lef at line 2.
+
+[INFO ODB-0227] LEF file: /foss/pdks/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/lef/sky130_ef_sc_hd.lef, created 4 library cells
+[INFO ODB-0127] Reading DEF file: /home/asic/workspace/mul_32/runs/RUN_2025-09-22_05-35-53/52-odb-cellfrequencytables/mul_32.def
+[INFO ODB-0128] Design: mul_32
+[INFO ODB-0130]     Created 131 pins.
+[INFO ODB-0131]     Created 15746 components and 82277 component-terminals.
+[INFO ODB-0132]     Created 2 special nets and 59934 connections.
+[INFO ODB-0133]     Created 6071 nets and 22343 connections.
+[INFO ODB-0134] Finished DEF file: /home/asic/workspace/mul_32/runs/RUN_2025-09-22_05-35-53/52-odb-cellfrequencytables/mul_32.def
+Using RCX ruleset '/foss/pdks/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.tech/openlane/rules.openrcx.sky130A.nom.calibre'…
+[INFO RCX-0431] Defined process_corner CURRENT_CORNER with ext_model_index 0
+[INFO RCX-0029] Defined extraction corner CURRENT_CORNER
+[INFO RCX-0435] Reading extraction model file /foss/pdks/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.tech/openlane/rules.openrcx.sky130A.nom.calibre ...
+[INFO RCX-0436] RC segment generation mul_32 (max_merge_res 50.0) ...
+[INFO RCX-0040] Final 27516 rc segments
+[INFO RCX-0439] Coupling Cap extraction mul_32 ...
+[INFO RCX-0440] Coupling threshhold is 0.1000 fF, coupling capacitance less than 0.1000 fF will be grounded.
+[INFO RCX-0442] 49% of 45591 wires extracted
+[INFO RCX-0442] 100% of 45591 wires extracted
+[INFO RCX-0045] Extract 6071 nets, 33586 rsegs, 33586 caps, 53912 ccs
+Setting global connections for newly added cells…
+[INFO] Setting global connections...
+Updating metrics…
+Cell type report:                       Count       Area
+  Fill cell                              8186   60968.47
+  Tap cell                               1525    1908.08
+  Antenna cell                             29      72.57
+  Standard cell                          6006   43803.26
+  Total                                 15746  106752.38
+Writing extracted parasitics to '/home/asic/workspace/mul_32/runs/RUN_2025-09-22_05-35-53/53-openroad-rcx/nom/mul_32.nom.spef'…
+[INFO RCX-0443] 6071 nets finished

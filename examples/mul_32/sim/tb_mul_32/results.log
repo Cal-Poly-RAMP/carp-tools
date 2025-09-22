@@ -1,0 +1,6 @@
+VCD info: dumpfile tb_mul_32.vcd opened for output.
+| A:          0 | B:          0 | C:                   0 |
+| A:         16 | B:          2 | C:                  32 |
+| A:        512 | B:       8192 | C:             4194304 |
+| A: 4294967295 | B: 4294967295 | C:18446744065119617025 |
+tb_mul_32.sv:55: $finish called at 40000 (1ps)

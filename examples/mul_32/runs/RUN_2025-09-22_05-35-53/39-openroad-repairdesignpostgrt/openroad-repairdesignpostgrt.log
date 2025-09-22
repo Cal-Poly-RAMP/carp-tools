@@ -1,0 +1,217 @@
+Reading timing models for corner nom_tt_025C_1v80…
+Reading timing library for the 'nom_tt_025C_1v80' corner at '/foss/pdks/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__tt_025C_1v80.lib'…
+Reading timing models for corner nom_ff_n40C_1v95…
+Reading timing library for the 'nom_ff_n40C_1v95' corner at '/foss/pdks/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ff_n40C_1v95.lib'…
+Reading timing models for corner nom_ss_100C_1v60…
+Reading timing library for the 'nom_ss_100C_1v60' corner at '/foss/pdks/volare/sky130/versions/0fe599b2afb6708d281543108caf8310912f54af/sky130A/libs.ref/sky130_fd_sc_hd/lib/sky130_fd_sc_hd__ss_100C_1v60.lib'…
+Reading OpenROAD database at '/home/asic/workspace/mul_32/runs/RUN_2025-09-22_05-35-53/37-openroad-globalrouting/mul_32.odb'…
+Reading design constraints file at '/usr/local/lib/python3.12/dist-packages/openlane/scripts/base.sdc'…
+[INFO] Using clock clk…
+[INFO] Setting output delay to: 200
+[INFO] Setting input delay to: 200
+[INFO] Setting load to: 0.033442
+[INFO] Setting clock uncertainty to: 0.25
+[INFO] Setting clock transition to: 0.1499999999999999944488848768742172978818416595458984375
+[INFO] Setting timing derate to: 5%
+[INFO] Setting RC values…
+[INFO] Setting signal min routing layer to: met1 and clock min routing layer to met1. 
+[INFO] Setting signal max routing layer to: met5 and clock max routing layer to met5. 
+-congestion_iterations 50 -verbose
+[INFO GRT-0020] Min routing layer: met1
+[INFO GRT-0021] Max routing layer: met5
+[INFO GRT-0022] Global adjustment: 30%
+[INFO GRT-0023] Grid origin: (0, 0)
+[INFO GRT-0043] No OR_DEFAULT vias defined.
+[INFO GRT-0088] Layer li1     Track-Pitch = 0.4600  line-2-Via Pitch: 0.3400
+[INFO GRT-0088] Layer met1    Track-Pitch = 0.3400  line-2-Via Pitch: 0.3400
+[INFO GRT-0088] Layer met2    Track-Pitch = 0.4600  line-2-Via Pitch: 0.3500
+[INFO GRT-0088] Layer met3    Track-Pitch = 0.6800  line-2-Via Pitch: 0.6150
+[INFO GRT-0088] Layer met4    Track-Pitch = 0.9200  line-2-Via Pitch: 1.0400
+[INFO GRT-0088] Layer met5    Track-Pitch = 3.4000  line-2-Via Pitch: 3.1100
+[INFO GRT-0019] Found 0 clock nets.
+[INFO GRT-0001] Minimum degree: 2
+[INFO GRT-0002] Maximum degree: 11
+[INFO GRT-0003] Macros: 0
+[INFO GRT-0043] No OR_DEFAULT vias defined.
+[INFO GRT-0004] Blockages: 255
+
+[INFO GRT-0053] Routing resources analysis:
+          Routing      Original      Derated      Resource
+Layer     Direction    Resources     Resources    Reduction (%)
+---------------------------------------------------------------
+li1        Vertical            0             0          0.00%
+met1       Horizontal      49519         24366          50.79%
+met2       Vertical        36765         23956          34.84%
+met3       Horizontal      24735         16882          31.75%
+met4       Vertical        14756          9087          38.42%
+met5       Horizontal       4947          2352          52.46%
+---------------------------------------------------------------
+
+[INFO GRT-0197] Via related to pin nodes: 32551
+[INFO GRT-0198] Via related Steiner nodes: 338
+[INFO GRT-0199] Via filling finished.
+[INFO GRT-0111] Final number of vias: 39782
+[INFO GRT-0112] Final usage 3D: 141006
+
+[INFO GRT-0096] Final congestion report:
+Layer         Resource        Demand        Usage (%)    Max H / Max V / Total Overflow
+---------------------------------------------------------------------------------------
+li1                  0             0            0.00%             0 /  0 /  0
+met1             24366         10102           41.46%             0 /  0 /  0
+met2             23956         10271           42.87%             0 /  0 /  0
+met3             16882           763            4.52%             0 /  0 /  0
+met4              9087           524            5.77%             0 /  0 /  0
+met5              2352             0            0.00%             0 /  0 /  0
+---------------------------------------------------------------------------------------
+Total            76643         21660           28.26%             0 /  0 /  0
+
+[INFO GRT-0018] Total wirelength: 236304 um
+[INFO GRT-0014] Routed nets: 6067
+[INFO RSZ-0058] Using max wire length 6335um.
+Iteration | Resized | Buffers | Nets repaired | Remaining
+---------------------------------------------------------
+        0 |       0 |       0 |             0 |      6068
+      100 |       0 |       0 |             0 |      5968
+      200 |       0 |       0 |             0 |      5868
+      300 |       0 |       0 |             0 |      5768
+      400 |       0 |       0 |             0 |      5668
+      500 |       0 |       0 |             0 |      5568
+      600 |       0 |       0 |             0 |      5468
+      700 |       0 |       0 |             0 |      5368
+      800 |       1 |       0 |             1 |      5268
+      900 |       1 |       0 |             1 |      5168
+     1000 |       1 |       0 |             1 |      5068
+     1100 |       1 |       0 |             1 |      4968
+     1200 |       3 |       1 |             3 |      4868
+     1300 |       3 |       1 |             4 |      4768
+     1400 |       3 |       1 |             4 |      4668
+     1500 |       4 |       1 |             5 |      4568
+     1600 |       4 |       1 |             5 |      4468
+     1700 |       4 |       1 |             5 |      4368
+     1800 |       5 |       2 |             7 |      4268
+     1900 |       5 |       2 |             7 |      4168
+     2000 |       5 |       3 |             8 |      4068
+     2100 |       5 |       3 |             8 |      3968
+     2200 |       5 |       3 |             8 |      3868
+     2300 |       5 |       3 |             8 |      3768
+     2400 |       5 |       3 |             9 |      3668
+     2500 |       5 |       3 |             9 |      3568
+     2600 |       5 |       3 |             9 |      3468
+     2700 |       5 |       3 |             9 |      3368
+     2800 |       5 |       3 |             9 |      3268
+     2900 |       5 |       3 |             9 |      3168
+     3000 |       5 |       3 |             9 |      3068
+     3100 |       5 |       3 |             9 |      2968
+     3200 |       5 |       3 |             9 |      2868
+     3300 |       5 |       3 |             9 |      2768
+     3400 |       5 |       3 |             9 |      2668
+     3500 |       5 |       3 |             9 |      2568
+     3600 |       5 |       3 |             9 |      2468
+     3700 |       5 |       3 |             9 |      2368
+     3800 |       5 |       3 |             9 |      2268
+     3900 |       5 |       3 |             9 |      2168
+     4000 |       5 |       3 |             9 |      2068
+     4100 |       5 |       3 |             9 |      1968
+     4200 |       5 |       3 |             9 |      1868
+     4300 |       5 |       3 |             9 |      1768
+     4400 |       5 |       3 |             9 |      1668
+     4500 |       5 |       3 |             9 |      1568
+     4600 |       5 |       3 |             9 |      1468
+     4700 |       5 |       3 |             9 |      1368
+     4800 |       5 |       3 |             9 |      1268
+     4900 |       5 |       3 |             9 |      1168
+     5000 |       5 |       3 |             9 |      1068
+     5100 |       5 |       3 |             9 |       968
+     5200 |       5 |       3 |             9 |       868
+     5300 |       5 |       3 |             9 |       768
+     5400 |       5 |       3 |             9 |       668
+     5500 |       5 |       3 |             9 |       568
+     5600 |       5 |       3 |             9 |       468
+     5700 |       5 |       3 |             9 |       368
+     5800 |       5 |       3 |             9 |       268
+     5900 |       5 |       3 |             9 |       168
+     6000 |       5 |       3 |             9 |        68
+    final |       5 |       3 |             9 |         0
+---------------------------------------------------------
+[INFO RSZ-0034] Found 18 slew violations.
+[INFO RSZ-0038] Inserted 3 buffers in 9 nets.
+[INFO RSZ-0039] Resized 5 instances.
+Placement Analysis
+---------------------------------
+total displacement          5.1 u
+average displacement        0.0 u
+max displacement            2.8 u
+original HPWL          141237.7 u
+legalized HPWL         145002.5 u
+delta HPWL                    3 %
+
+[INFO DPL-0020] Mirrored 2514 instances
+[INFO DPL-0021] HPWL before          145002.5 u
+[INFO DPL-0022] HPWL after           141251.1 u
+[INFO DPL-0023] HPWL delta               -2.6 %
+-congestion_iterations 50 -verbose
+[INFO GRT-0020] Min routing layer: met1
+[INFO GRT-0021] Max routing layer: met5
+[INFO GRT-0022] Global adjustment: 30%
+[INFO GRT-0023] Grid origin: (0, 0)
+[INFO GRT-0043] No OR_DEFAULT vias defined.
+[INFO GRT-0088] Layer li1     Track-Pitch = 0.4600  line-2-Via Pitch: 0.3400
+[INFO GRT-0088] Layer met1    Track-Pitch = 0.3400  line-2-Via Pitch: 0.3400
+[INFO GRT-0088] Layer met2    Track-Pitch = 0.4600  line-2-Via Pitch: 0.3500
+[INFO GRT-0088] Layer met3    Track-Pitch = 0.6800  line-2-Via Pitch: 0.6150
+[INFO GRT-0088] Layer met4    Track-Pitch = 0.9200  line-2-Via Pitch: 1.0400
+[INFO GRT-0088] Layer met5    Track-Pitch = 3.4000  line-2-Via Pitch: 3.1100
+[INFO GRT-0019] Found 0 clock nets.
+[INFO GRT-0001] Minimum degree: 2
+[INFO GRT-0002] Maximum degree: 11
+[INFO GRT-0003] Macros: 0
+[INFO GRT-0043] No OR_DEFAULT vias defined.
+[INFO GRT-0004] Blockages: 255
+
+[INFO GRT-0053] Routing resources analysis:
+          Routing      Original      Derated      Resource
+Layer     Direction    Resources     Resources    Reduction (%)
+---------------------------------------------------------------
+li1        Vertical            0             0          0.00%
+met1       Horizontal      49519         24366          50.79%
+met2       Vertical        36765         23956          34.84%
+met3       Horizontal      24735         16882          31.75%
+met4       Vertical        14756          9087          38.42%
+met5       Horizontal       4947          2352          52.46%
+---------------------------------------------------------------
+
+[INFO GRT-0197] Via related to pin nodes: 32563
+[INFO GRT-0198] Via related Steiner nodes: 338
+[INFO GRT-0199] Via filling finished.
+[INFO GRT-0111] Final number of vias: 39795
+[INFO GRT-0112] Final usage 3D: 141049
+
+[INFO GRT-0096] Final congestion report:
+Layer         Resource        Demand        Usage (%)    Max H / Max V / Total Overflow
+---------------------------------------------------------------------------------------
+li1                  0             0            0.00%             0 /  0 /  0
+met1             24366         10106           41.48%             0 /  0 /  0
+met2             23956         10271           42.87%             0 /  0 /  0
+met3             16882           763            4.52%             0 /  0 /  0
+met4              9087           524            5.77%             0 /  0 /  0
+met5              2352             0            0.00%             0 /  0 /  0
+---------------------------------------------------------------------------------------
+Total            76643         21664           28.27%             0 /  0 /  0
+
+[INFO GRT-0018] Total wirelength: 236359 um
+[INFO GRT-0014] Routed nets: 6070
+Setting global connections for newly added cells…
+[INFO] Setting global connections...
+Updating metrics…
+Cell type report:                       Count       Area
+  Fill cell                               240     900.86
+  Tap cell                               1525    1908.08
+  Timing Repair Buffer                    635    3574.68
+  Inverter                                 69     259.00
+  Multi-Input combinational cell         5302   39969.58
+  Total                                  7771   46612.20
+Writing OpenROAD database to '/home/asic/workspace/mul_32/runs/RUN_2025-09-22_05-35-53/39-openroad-repairdesignpostgrt/mul_32.odb'…
+Writing netlist to '/home/asic/workspace/mul_32/runs/RUN_2025-09-22_05-35-53/39-openroad-repairdesignpostgrt/mul_32.nl.v'…
+Writing powered netlist to '/home/asic/workspace/mul_32/runs/RUN_2025-09-22_05-35-53/39-openroad-repairdesignpostgrt/mul_32.pnl.v'…
+Writing layout to '/home/asic/workspace/mul_32/runs/RUN_2025-09-22_05-35-53/39-openroad-repairdesignpostgrt/mul_32.def'…
+Writing timing constraints to '/home/asic/workspace/mul_32/runs/RUN_2025-09-22_05-35-53/39-openroad-repairdesignpostgrt/mul_32.sdc'…

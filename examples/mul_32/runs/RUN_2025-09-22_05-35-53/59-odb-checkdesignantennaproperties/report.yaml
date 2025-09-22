@@ -1,0 +1,5 @@
+- cell: mul_32
+  inout: []
+  input:
+  - clk
+  output: []

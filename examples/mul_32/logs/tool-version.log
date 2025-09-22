@@ -1,0 +1,8 @@
+Verilator 5.034 2025-02-24 rev v5.034
+Icarus Verilog version 13.0 (devel) (s20250103-26-gb0c57ab1-dirty)
+Yosys 0.51 (git sha1 c4b519022, g++ 13.3.0-6ubuntu2~24.04 -fPIC -O3)
+** ngspice-44.2 : Circuit level simulation program
+Magic 8.3.522
+KLayout 0.29.12
+OpenROAD v2.0-16235-gedf00dff9 
+OpenLane v2.3.10

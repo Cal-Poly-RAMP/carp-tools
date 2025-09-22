@@ -1,0 +1,53 @@
+{
+   "creator": "Yosys 0.51 (git sha1 c4b519022, g++ 13.3.0-6ubuntu2~24.04 -fPIC -O3)",
+   "invocation": "stat -json -liberty /home/asic/workspace/mul_32/runs/RUN_2025-09-22_05-35-53/tmp/3f55eaaf2def4821b5a775f0375524fc.lib ",
+   "modules": {
+      "\\mul_32": {
+         "num_wires":         6345,
+         "num_wire_bits":     6470,
+         "num_pub_wires":     4,
+         "num_pub_wire_bits": 129,
+         "num_ports":         4,
+         "num_port_bits":     129,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         6405,
+         "num_cells_by_type": {
+            "$_ANDNOT_": 1936,
+            "$_AND_": 892,
+            "$_NAND_": 389,
+            "$_NOR_": 165,
+            "$_NOT_": 128,
+            "$_ORNOT_": 80,
+            "$_OR_": 735,
+            "$_XNOR_": 493,
+            "$_XOR_": 1587
+         }
+      }
+   },
+      "design": {
+         "num_wires":         6345,
+         "num_wire_bits":     6470,
+         "num_pub_wires":     4,
+         "num_pub_wire_bits": 129,
+         "num_ports":         4,
+         "num_port_bits":     129,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         6405,
+         "num_cells_by_type": {
+            "$_ANDNOT_": 1936,
+            "$_AND_": 892,
+            "$_NAND_": 389,
+            "$_NOR_": 165,
+            "$_NOT_": 128,
+            "$_ORNOT_": 80,
+            "$_OR_": 735,
+            "$_XNOR_": 493,
+            "$_XOR_": 1587
+         }
+      }
+}
+

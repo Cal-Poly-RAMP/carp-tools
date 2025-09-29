@@ -22,7 +22,7 @@ if [[ "$OSTYPE" == "darwin"* ]]; then
 
 fi
 
-docker pull fwilken/asic:alpha
+docker pull ryancramer22/carp-tools:latest
 if ! [ $? -eq 0 ]; then
     sudo groupadd docker || true
     sudo usermod -aG docker $USER

@@ -1,24 +1,31 @@
 #!/usr/bin/env bash
 set -x
-
-if ! command -v docker &> /dev/null; then
-    echo "Please install Docker: https://www.docker.com/products/docker-desktop/"
+if ! $(which docker); then
+    echo Please install docker https://www.docker.com/products/docker-desktop/
+    echo If running on WSL, install docker desktop on windows. You might have to enable the docker/wsl integration in the docker desktop settings.
     exit 1
 fi
 
-if ! command -v xhost &> /dev/null; then
-    sudo apt update && sudo apt -y install x11-xserver-utils || {
-        echo "Please install xhost manually:"
-        echo "sudo apt install x11-xserver-utils"
+if ! $(which xhost); then
+    if ! (sudo apt update && sudo apt -y install x11-xserver-utils); then
+        echo Please install xhost on your machine. Run the following:
+        echo sudo apt install x11-xserver-utils
         exit 1
-    }
+    fi;
+fi
+if [[ "$OSTYPE" == "darwin"* ]]; then
+    # Mac OSX
+    if ! $(which Xquartz); then
+        echo Please verify that you have installed Xquartz and followed the permission instructions on Git Hub for Mac.
+        exit 1
+    fi
+
 fi
 
-# Pull CARP tools image
 docker pull fwilken/asic:alpha
-if [ $? -ne 0 ]; then
+if ! [ $? -eq 0 ]; then
     sudo groupadd docker || true
     sudo usermod -aG docker $USER
     sudo chmod 770 /var/run/docker.sock
-    echo "Log out, log in, and re-run this script."
+    echo "Log out, Log In, and Re Run This Script."
 fi

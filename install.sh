@@ -15,7 +15,7 @@ if ! command -v xhost &> /dev/null; then
 fi
 
 # Pull CARP tools image
-docker pull ryancramer22/carp-tools:latest
+docker pull fwilken/asic:alpha
 if [ $? -ne 0 ]; then
     sudo groupadd docker || true
     sudo usermod -aG docker $USER

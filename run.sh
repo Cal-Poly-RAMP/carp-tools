@@ -7,7 +7,7 @@ ABS_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" && pwd )
 if [ "$1" = "-l" ] || [ "$1" = "--local" ]; then
     CONTAINER=asic
 else 
-    CONTAINER=fwilken/asic:alpha
+    CONTAINER=ryancramer22/carp-tools:latest
 fi
 
 TERM=xterm-256color

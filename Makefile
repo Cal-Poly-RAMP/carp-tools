@@ -173,7 +173,7 @@ synth:
 	@yosys -s $(SYNTH_SRC) > logs/synth.log 2>&1 && \
 	  echo "$(GREEN)Synthesis PASSED.$(RESET)" || \
 	  ( echo "$(RED)Synthesis FAILED! See logs/synth.log for details.$(RESET)" && \
-	    tail -n 20 synth.log && \
+	    tail -n 20 logs/synth.log && \
 	    exit 1 )
 
 .PHONY: sta

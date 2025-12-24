@@ -1,0 +1,6 @@
+# Using the latest version of CARP tools (gaw fix)
+FROM ryancramer22/carp-tools:latest
+
+USER ubuntu
+
+
